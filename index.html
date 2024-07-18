@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            display: grid;
+            /* flex-direction: column; */
+        }
+        .div{
+            width : 100px;
+            height : 100px;
+        }
+        .div1{
+            background-color: green;
+        }
+        .div2{
+            background-color: orange;
+        }
+        .div3{
+            background-color: yellow;
+        }
+        @media only screen and (max-width: 600px) {
+           #parent{
+            width : 20%;
+            grid-template-rows: 2;
+           }
+        }
+        @media only screen and (max-width: 320px) {
+           #parent{
+            width : 20%;
+            grid-template-rows: 1;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+    <div class="div div1"></div>
+    <div class="div div2"></div>
+    <div class="div div3"></div>
+    </div>
+</body>
+</html>

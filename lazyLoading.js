@@ -1,0 +1,1 @@
+// Lazy loading is used to reduce the load time in react app and it reduces risk of the web application to the minimum.

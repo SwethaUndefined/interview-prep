@@ -1,0 +1,72 @@
+<!-- Key Takeaways -->
+
+<!-- Static: Default positioning, no effect from top, right, bottom, or left properties.
+Relative: Position relative to the element's normal position.
+Absolute: Position relative to the nearest positioned ancestor.
+Fixed: Position relative to the viewport; element stays fixed when scrolling.
+Sticky: Hybrid position that switches between relative and fixed based on scroll position. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Example</title>
+    <style>
+        .static {
+            position: static;
+            background-color: lightblue;
+        }
+
+        .relative {
+            position: relative;
+            top: 10px;
+            left: 20px;
+            background-color: lightgreen;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: lightcoral;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: lightgoldenrodyellow;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: lightpink;
+        }
+
+        .container {
+            height: 200px;
+            overflow: auto;
+            background-color: lightgray;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Position Example</h2>
+    <div class="static">Static Position</div>
+    <div class="relative">Relative Position</div>
+    <div class="container">
+        <div class="absolute">Absolute Position</div>
+        <div class="sticky">Sticky Position</div>
+        <div class="content">Scrollable Content</div>
+    </div>
+    <div class="fixed">Fixed Position</div>
+</body>
+</html>

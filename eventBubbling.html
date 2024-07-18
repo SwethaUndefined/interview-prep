@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling Example</title>
+    <style>
+        .div1, .div2, .div3, .div4, .div5 {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+        .div1 { background-color: lightblue; }
+        .div2 { background-color: lightgreen; }
+        .div3 { background-color: lightcoral; }
+        .div4 { background-color: lightgoldenrodyellow; }
+        .div5 { background-color: lightgray; }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        Div 1
+        <div class="div2">
+            Div 2
+            <div class="div3">
+                Div 3
+                <div class="div4">
+                    Div 4
+                    <div class="div5">
+                        Div 5
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.div1').addEventListener('click', function() {
+            console.log('Div 1 Clicked');
+        });
+        document.querySelector('.div2').addEventListener('click', function() {
+            console.log('Div 2 Clicked');
+        });
+        document.querySelector('.div3').addEventListener('click', function() {
+            console.log('Div 3 Clicked');
+        });
+        document.querySelector('.div4').addEventListener('click', function() {
+            console.log('Div 4 Clicked');
+        });
+        document.querySelector('.div5').addEventListener('click', function() {
+            console.log('Div 5 Clicked');
+            // event.stopPropagation();
+        });
+    </script>
+</body>
+</html>

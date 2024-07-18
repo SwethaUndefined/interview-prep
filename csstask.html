@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Line Divs</title>
+    <style>
+        .parent {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .child {
+            width: 20%; /* Since we have 5 items per row, each should take 20% of the width */
+            box-sizing: border-box; /* To include padding and border in the element's total width and height */
+            padding: 10px; /* Optional: Adds some space around each child */
+            text-align: center; /* Optional: Centers text inside each div */
+            border: 1px solid #ccc; /* Optional: Adds border for visibility */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+        <div class="child">10</div>
+    </div>
+</body>
+</html>
