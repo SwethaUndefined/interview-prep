@@ -28,9 +28,9 @@ const ControlledComponent = () => {
 // Benefits:
 // Provides a single source of truth for the input value.
 // Enables validation and manipulation of the input value before updating the state.
-
-
 // Ensures consistency between the UI and React state.
+
+
 // Uncontrolled Components
 // Definition: Uncontrolled components are components where form data is handled by the DOM itself.
 // Usage:
@@ -62,6 +62,9 @@ export default UncontrolledComponent;
 // Choosing Between Controlled and Uncontrolled Components
 // Controlled Components: Preferred when you need React to manage and validate the form state. Suitable for forms requiring complex validation and dynamic behavior.
 // Uncontrolled Components: Suitable for simpler forms or when integrating with legacy code or non-React libraries.
+
+
+
 // Conclusion
 // Understanding the distinction between controlled and uncontrolled components in React helps in choosing the appropriate approach based on your application’s needs. Controlled components provide more control and validation capabilities, while uncontrolled components offer simplicity and direct DOM manipulation when necessary.
 
