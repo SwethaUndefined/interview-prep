@@ -24,3 +24,7 @@ function a(n1){
   }
 }
 a(3)(4)
+
+
+//currying is a technique where we can pass the arguments one at a time and execute that immediately, this processc continues
+//untitl the all the arguments are passed. This is usefull for code reusablility, partial completion

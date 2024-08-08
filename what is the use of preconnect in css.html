@@ -1,0 +1,24 @@
+<!-- The preconnect directive in CSS is used to optimize the loading performance of a webpage by establishing early 
+connections to external origins before resources from those origins are actually requested.
+This is particularly useful for reducing latency when your page makes requests to external domains. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Use preconnect to establish early connections -->
+  <link rel="preconnect" href="https://example.com">
+  <link rel="preconnect" href="https://cdn.example.com">
+</head>
+<body>
+  <h1>Hello, World!</h1>
+</body>
+</html>
+
+<!-- Reduced Latency: By establishing connections earlier, it can reduce the time it takes for resources to start loading.
+Improved Performance: Especially useful for resources that are critical to the page, such as fonts, scripts, 
+or stylesheets hosted on third-party domains.
+In summary, preconnect can help improve the loading speed of your webpage by reducing the time required to 
+establish network connections to external resources -->

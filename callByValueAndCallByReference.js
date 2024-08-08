@@ -1,32 +1,32 @@
-//callByValueAndCallByReference
+// Call by value and call by reference
+
+// Call by value works with copy of the original value
+// When i change the function, it does not affect the original
+
+
+// call by reference works with reference of the original value
+// When i change the function, it will affect the original
 
 
 
-var a = 10;
-var b = a;
-console.log(a)
-console.log(b)
-b = 20;
-console.log(a)
-console.log(b)
+//Call by value
 
-var obj = {
-    name : "Swetha",
-    age : 20
-}
-console.log(obj)
-
-var obj1 = obj;
-
-obj1.name = "Ramya"
-console.log(obj1)
+function changeValue(a) {
+    a = 10;
+  }
+  
+  let x = 5;
+  changeValue(x);
+  console.log(x); // Output: 5
 
 
-var arr = [1,2,3];
-var arr1 = arr;
-console.log(arr)
-console.log(arr1)
-
-arr1.push(4);
-console.log(arr)
-console.log(arr1)
+//call by reference 
+  function changeObject(obj) {
+    obj.name = "New Name";
+  }
+  
+  let person = { name: "Old Name" };
+  changeObject(person);
+  console.log(person.name); // Output: New Name
+  
+  

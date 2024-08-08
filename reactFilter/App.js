@@ -27,7 +27,7 @@ function App() {
       });
       setFilterData(filteredData);
     } else {
-      setFilterData([]); // Clear the filtered data
+      setFilterData([]); 
     }
   };
   const renderData = filterData.length > 0 ? filterData : data;
@@ -37,7 +37,7 @@ function App() {
       <input placeholder="Search by name" onChange={handleChange} />
       <ul>
         {renderData.map((res) => {
-          return <li key={res.id}>{res}</li>; // Add a unique key for each list item
+          return <li key={res.id}>{res}</li>; 
         })}
       </ul>
     </div>
