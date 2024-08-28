@@ -53,3 +53,12 @@ var obj1 = {
 
 const{firstName2,lastName2,obj3 :{age2}} = obj1;
 console.log(firstName2,lastName2,age2)
+
+
+
+const obj3 = {
+    a : {c:10},
+    d:5
+}
+ const {a:{c},d} = obj3;
+ console.log(c,d)

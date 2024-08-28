@@ -4,7 +4,7 @@
 //4. Error Handling
 
 //Mounting:
-// When the instance of the component is being created and inserted into the DOM
+  // When the instance of the component is being created and inserted into the DOM
   //1. constructor = is called whenever a new component is created. Directly can able to change the state without setState.
   //2. static getDerivedStateFromProps(props,state) = because of static this keyword cannot be used here. Initial render with state
   //and props. Fetching data is not possible.
